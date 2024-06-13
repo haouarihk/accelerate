@@ -9,4 +9,4 @@ COPY . .
 
 RUN bun install
 
-CMD bun start
+CMD bun start-node

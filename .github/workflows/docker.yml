@@ -31,6 +31,8 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/accelerate:latest
+          tags: |
+            ${{ secrets.DOCKER_USERNAME }}/accelerate:${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/accelerate:latest
           platforms: linux/amd64,linux/arm64
 
