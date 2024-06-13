@@ -1,8 +1,11 @@
-const { createServer } = require("prisma-accelerate-local");
+const { createServer, } = require("prisma-accelerate-local");
 require("dotenv").config();
 createServer({
   datasourceUrl: process.env.DATABASE_URL || "",
   secret: process.env.SECRET || "",
+  fastifySeverOptions: {
+
+  }
 })
   .listen({
     port: +(process.env.PORT || 4000),
