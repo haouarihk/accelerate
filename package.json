@@ -13,6 +13,6 @@
     },
     "dependencies": {
         "dotenv": "^16.4.5",
-        "prisma-accelerate-local": "^1.1.2"
+        "prisma-accelerate-local": "^1.1.4"
     }
 }
