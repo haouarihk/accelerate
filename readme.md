@@ -7,7 +7,7 @@ version: "3"
 
 services:
   accelerate:
-    image: wolfpat/accelerate
+    image: haouarihk/accelerate
     restart: unless-stopped
     stop_signal: SIGKILL
     ports:
